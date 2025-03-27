@@ -30,7 +30,7 @@ def clean_country_usa(item: str) ->str:
     possibilities = [
         'united states of america', 'usa', 'us', 'united states', 'u.s.'
     ]
-    
+
     if not isinstance(item, str):
         return item
     possibilities = [
@@ -39,6 +39,7 @@ def clean_country_usa(item: str) ->str:
     if item.strip().lower() in possibilities:
         return 'United States'
     return item
+
 
 
 if __name__=='__main__':
