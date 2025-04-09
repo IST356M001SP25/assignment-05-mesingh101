@@ -23,3 +23,4 @@ Examples:
 
 `--- Reflection Below This Line ---`
 
+This assignment helped me understand the full ETL (Extract, Transform, Load) pipeline process in a hands-on way. I learned how to break a large data problem into manageable stages—starting with modular utility functions in pandaslib.py, organizing raw data downloads in extract.py, engineering and cleaning data in transform.py, and finally uploading the processed reports to an S3-compatible bucket in load.py. The most challenging part was the transformation step—merging datasets with different formats (e.g., full city names with states and countries), cleaning the currency and mapping states to abbreviations, and ensuring the joins worked correctly across multiple dataframes. It required careful attention to column names, data types, and formatting. Debugging why certain rows were dropped or didn’t match as expected took some trial and error.
